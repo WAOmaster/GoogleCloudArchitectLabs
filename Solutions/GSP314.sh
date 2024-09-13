@@ -135,21 +135,21 @@ exit
 # REPLACE VARIABLE VALUES WITH YOUR LAB VALUES
 
 
-export VPC_NAME=vpc-network-djcp
+export VPC_NAME=vpc-network-if69
 
-export SUBNET1=subnet-a-xh71
+export SUBNET1=subnet-a-o23s
 
-export REGION1=us-east4
+export REGION1=us-central1
 
-export SUBNET2=subnet-b-kii3
+export SUBNET2=subnet-b-02t8
 
-export REGION2=us-east1
+export REGION2=europe-west1
 
-export RULE_NAME1=jqyk-firewall-ssh
+export RULE_NAME1=xgit-firewall-ssh
 
-export RULE_NAME2=ghvy-firewall-rdp
+export RULE_NAME2=ygyc-firewall-rdp
 
-export RULE_NAME3=kevk-firewall-icmp
+export RULE_NAME3=vpxi-firewall-icmp
 
 
 
