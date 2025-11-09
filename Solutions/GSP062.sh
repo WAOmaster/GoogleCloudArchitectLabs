@@ -54,11 +54,11 @@ gcloud compute forwarding-rules create on-prem-fr-udp4500 --ip-protocol UDP --po
 
 gcloud compute vpn-tunnels create on-prem-tunnel1 --peer-address $cloud_gw1_ip \
     --target-vpn-gateway on-prem-gw1 --ike-version 2 --local-traffic-selector 0.0.0.0/0 \
-    --remote-traffic-selector 0.0.0.0/0 --shared-secret=[MY_SECRET] --region $REGION
+    --remote-traffic-selector 0.0.0.0/0 --shared-secret=sharedsecret --region $REGION
 
 gcloud compute vpn-tunnels create cloud-tunnel1 --peer-address $on_prem_gw_ip \
     --target-vpn-gateway cloud-gw1 --ike-version 2 --local-traffic-selector 0.0.0.0/0 \
-    --remote-traffic-selector 0.0.0.0/0 --shared-secret=[MY_SECRET] --region $REGION_1
+    --remote-traffic-selector 0.0.0.0/0 --shared-secret=sharedsecret --region $REGION_1
 
 gcloud compute routes create on-prem-route1 --destination-range 10.0.1.0/24 \
     --network on-prem --next-hop-vpn-tunnel on-prem-tunnel1 \
